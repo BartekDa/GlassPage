@@ -5,10 +5,22 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-
+  font-family: "Roboto", sans-serif; /* Czcionka dla treści głównej */
   background: #efefef;
   line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif; /* Czcionka dla nagłówków */
+  font-weight: 700; /* Wyróżnij nagłówki */
+  color: #ffffff;
+}
+p,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
 }
 .navbar {
   background-color: rgba(74, 73, 73, 0.4);
@@ -62,6 +74,7 @@ body {
 
 .navbar-link {
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 16px;
   transition: color 0.3s ease;
@@ -182,6 +195,7 @@ body {
 
     .header-title {
       font-size: 3rem;
+      font-family: "Playfair Display", serif;
       font-weight: bold;
       margin-bottom: 1rem;
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
@@ -190,6 +204,7 @@ body {
     .header-desc {
       font-size: 1.25rem;
       line-height: 1.8;
+      font-family: "Roboto", sans-serif;
       margin-bottom: 2rem;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     }
@@ -693,4 +708,25 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1rem;
   width: 100%;
+}
+@media (min-width: 1000px) {
+  .find-us {
+    .find-us-title {
+      font-size: 2rem;
+    }
+
+    .find-us-desc {
+      font-size: 1rem;
+    }
+
+    .find-us-image {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      border-radius: 8px;
+      padding: 2em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      object-fit: contain;
+    }
+  }
 }
